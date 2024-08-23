@@ -8,7 +8,7 @@ export default defineConfig({
       "/API": {
         target: "https://health.code-faster.giize.com",
         changeOrigin: true,
-        secure: false, // Add this if you're dealing with a self-signed SSL certificate
+        secure: true, // Add this if you're dealing with a self-signed SSL certificate
         // No rewrite necessary if you want to keep '/API' in the proxied URL
       },
     },
